@@ -1,0 +1,91 @@
+<center> Volume Graphics </CENTER>
+<br>
+<br>
+Announcement
+<ul>
+	<li> Take-home exam (<a href="./vg15_takehome.hwp">hwp file</a>): please insert your answer into the hwp file and send the hwp file back to Prof.Sohn's email until Dec. 20th (Sunday) 11:59pm.
+	<li> Term Project
+	<ul>
+		<li> Project result presentation: December 7
+		<li> Choose a free topic (e.g. Bas-Relief Generation, ...)  that is related to your research and this class (graphics, image, virtual reality, ...)
+		<li> Make an executable program and give a demo+presentation on December 7.
+	</ul>
+	<li> <a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html"> Oral Presentation Advice </a>
+	<ul>
+		<li> Web Material: <a href="http://www.princeton.edu/~archss/webpdfs08/BaharMartonosi.pdf"> Presentation Tips </a>  
+	</ul>
+	<li> <a href="./paper_list.txt">Student Paper Presentation</a> (November 30, December 7)
+	<li> <a href="./vg_midterm.txt"> Midterm Assignment</a>
+</ul>
+<br>
+Lecture Notes
+<ul>
+<li> <a href="./vg01.ppt"> Lecture 1: Course Information </a>
+<li> <a href="./vg02.ppt"> Lecture 2: Visualization Basics </a>
+	<ul>
+	<li> <a href="./differential_I.pdf"> Differential I</a>
+	<li> <a href="./differential_II.pdf"> Differential II</a>
+	<li> <a href="http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1876">Volume Rover</a>: (Open Source) Volume Visualization Software
+	<li> rawiv file example: <a href="./volResize/ventricle_good.rawiv">ventricle_good.rawiv</a> : 256x256x128
+	<li> rawiv file volume resize
+	<ul>
+		<li> <a href="./volResize/test.cpp">test.cpp</a>
+		<li> <a href="./volResize/pcio.h">pcio.h</a> , <a href="./volResize/pcio.cpp">pcio.cpp</a>
+	</ul>
+	</ul>
+<li> <a href="./vg03.ppt"> Lecture 3: Isosurface Extraction and Contour Tree</a>
+	<ul>
+		<li> <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">Union-Find data structure (Disjoint Set)</a> (used for contour tree construction): <a href="./volResize/unionfind.h">unionfind.h</a>
+		<li> <a href="./volResize/join_tree.cpp">join_tree.cpp</a>
+		<li> Carr, Hamish, Jack Snoeyink, and Ulrike Axen. "Computing contour trees in all dimensions." Computational Geometry 24.2 (2003): 75-94.
+		<li> <a href="./Simplification.pptx">Contour Tree Simplification</a>
+	</ul>
+<li> <a href="./vg04.ppt"> Lecture 4: Isosurface Extraction and 3D Meshing</a>
+	<ul>
+	<li> Ju, Tao, et al. "Dual contouring of hermite data." ACM Transactions on Graphics (TOG) 21.3 (2002): 339-346.
+	<li> Zhang, Yongjie, Chandrajit Bajaj, and Bong-Soo Sohn. "3D finite element meshing from imaging data." Computer methods in applied mechanics and engineering 194.48 (2005): 5083-5106.
+	</ul>
+<li> <a href="./vg04-2.ppt"> Lecture 4-2: CUDA Isosurface Extraction</a>
+	<ul>
+		<li> <a href="./GTC.pdf">CUDA Introduction by NVIDIA</a>
+		<li> <a href="http://docs.nvidia.com/cuda/cuda-samples/#marching-cubes-isosurfaces">SAMPLE CODE: CUDA Marching Cubes Isosurfaces</a>
+			<ul>
+			<li> <a href="./marchingCubes_test.zip">marchingCubes_test.zip</a>
+			</ul>
+		<li> <a href="./CUDASetting.ppt">CUDA Install(in Korean)</a>
+		<li> <a href="http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html">CUDA C Programming Guide</a> (<a href="http://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf">PDF</a>)
+		<li> <a href="http://developer.download.nvidia.com/books/cuda-by-example/cuda-by-example-sample.pdf">CUDA by Example (PDF)</a>
+	<li> <a href="http://stackoverflow.com/questions/4391162/cuda-determining-threads-per-block-blocks-per-grid">How to determine grid/block size</a>
+	</ul>
+<li> <a href="./vg06.ppt"> Lecture 6: Level Set Method </a> 
+	<ul>
+	<li> Related Movie Files : <a href="http://math.berkeley.edu/~sethian/2006/Applications/Geometry/Moviecurvcollapse.mpeg"> Moviecurvcollapse.mpeg </a> , <a href="http://math.berkeley.edu/~sethian/2006/Applications/Medical_Imaging/Movieartery.mpeg"> Movieartery.mpeg </a> , <a href="http://math.berkeley.edu/~sethian/2006/Applications/Medical_Imaging/aorta.mpg"> aorta.mpg </a>
+	<li> <a href="./vg06-2.ppt"> Lecture 6-2: Blood Vessel Modeling using Level Set Method</a>
+	<li> Read: <a href="http://dl.acm.org/citation.cfm?id=566585"> Level Set Surface Editing Operators </a>, SIGGRAPH 2002
+	</ul>
+	<li> <a href="./vg05.ppt"> Lecture 5: Direct Volume Rendering </a>
+	<ul>
+	<li> Paper: <a href="http://cau.ac.kr/~bongbong/grad10/kniss_tvcg02-small.pdf">Multi-Dimensional Transfer Functions for Volume Rendering</a>
+	<li> <a href="./vg05-mtf.ppt"> Lecture 5 (Additional) : Multidimensional Transfer Function</a>
+	<li> <a href="http://cvcweb.ices.utexas.edu/cvcwp/?page_id=1876">VolumeRover : Integrated Volume Visualization Tool</a>
+	<ul>
+		<li>New Version (Windows Installer):  <a href="http://cvcweb.ices.utexas.edu/tmp/VolumeRover-2.0.4176-win32-x86.exe">VolumeRover-2.0.4176-win32-x86.exe</a></li>
+		<li><a href="http://cvcweb.ices.utexas.edu/software/doc/VolumeRoverDoc.pdf">VolRover 2.0 User Guide</a></li>
+		<li>Example Data: <a href="http://cvcweb.ices.utexas.edu/software/data/VolRoverExamples.tgz">VolRoverExamples.tgz</a></li>
+		<li>Previous Version (Windows binary) <a href="http://www.cs.utexas.edu/%7Ebajaj/cvc/software/bin/VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip">VolumeRover-gcc3.4.5-windows.x86-1.2.1b.zip</a></li>
+	</ul>
+	</ul>
+	<li> <a href="./vg07.ppt"> Lecture 7: Point Set Processing</a>
+	<ul>
+		<li> <a href="https://algo.kaust.edu.sa/Documents/cs372l11.pdf">Prof.Vigneron's Slides on Voronoi Diagram/Delaunay Triangulations</a>
+		<li> <a href="https://en.wikipedia.org/wiki/Natural_neighbor">Natural Neighbor Interpolation</a> (Sibson's Interpolation) for scattered data interpolation. (<a href="./sibson.pptx">Slide</a>)
+		<li> <a href="https://en.wikipedia.org/wiki/Radial_basis_function">Radial Basis Function</a> for scattered data interpolation.
+		<ul>
+			<li> <a href="http://www-lb.cs.umd.edu/class/spring2005/cmsc828v/papers/siggraph01.pdf">SIGGRAPH 2001 Paper</a> <a href="http://www.cs.technion.ac.il/~cs236329/tutorials/RBF.pdf">(Tutorial Note Slides)</a>
+		</ul>
+	</ul>
+	<li> <a href="./lec_delaunay.ppt">Delaunay Triangulation</a>
+	<ul> <li> <a href="./ruppert.ppt">Ruppert Algorithm</a> (Lecture Note of Dr. Barbic at CMU)
+	</ul>
+	
+</ul>
